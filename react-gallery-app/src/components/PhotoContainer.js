@@ -19,9 +19,12 @@ class PhotoContainer extends Component {
       } else {
          photos = <NotFound />
       }
+      // Remove pluralization
+      let title = this.props.title.replace(/s$/, '');
+
       return (
          <div className="photo-container">
-            <h2>Results</h2>
+            <h2>{title} Gifs</h2>
             <ul>
                {photos}
             </ul>

@@ -6,7 +6,8 @@ import axios from 'axios';
 import SearchForm from './components/SearchForm';
 import Nav from './components/Nav';
 import PhotoContainer from './components/PhotoContainer';
-import NotFound from './components/NotFound';
+import FourZeroFour from './components/FourZeroFour';
+
 import { apiKey } from './config';
 
 // Preset data 
@@ -15,6 +16,7 @@ import { cats, dogs, computers } from './data/data';
 class App extends Component {
   state = {
      images: [],
+     title: '',
      loading: true
   }
 
@@ -29,7 +31,7 @@ class App extends Component {
      axios.get('https://www.flickr.com/services/rest', {
         params: {
            method: 'flickr.photos.search',
-           text: query,
+           tags: query,
            api_key: apiKey,
            per_page: 24,
            format: 'json',
@@ -40,6 +42,7 @@ class App extends Component {
          let data = res.data.photos.photo;
          this.setState({
             images: data,
+            title: query,
             loading: false
          })
      })
@@ -50,16 +53,17 @@ class App extends Component {
    return (
       <BrowserRouter>
        <div className="container">
-          <SearchForm />
+          <SearchForm onSearch={this.performSearch}/>
           <Nav />
           { this.state.loading 
-            ? <h3> Loading... </h3>
+            ? <h3 id="loading"> Loading... </h3>
             : <Switch>
                   <Route exact path="/" render={() => <Redirect to="/Cats"/>} />
-                  <Route path="/Cats" render={() => <PhotoContainer data={cats} />} />
-                  <Route path="/Dogs" render={() => <PhotoContainer data={dogs} />} />
-                  <Route path="/Computers" render={() => <PhotoContainer data={computers} />} />
-                  <Route path="*" component={NotFound} />
+                  <Route path="/Cats" render={() => <PhotoContainer title="Cat" data={cats} />} />
+                  <Route path="/Dogs" render={() => <PhotoContainer title="Dog" data={dogs} />} />
+                  <Route path="/Computers" render={() => <PhotoContainer title="Computer" data={computers} />} />
+                  <Route path="/search/:term" render={() => <PhotoContainer title={this.state.title} data={this.state.images} />} />
+                  <Route path="*" component={FourZeroFour} />
                </Switch>
           }
        </div>

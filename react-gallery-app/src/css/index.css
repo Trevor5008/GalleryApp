@@ -64,6 +64,22 @@ input {
   background-color: #275270;
 }
 
+#four_four {
+   position: relative;
+   top: 5vh;
+}
+
+#four_four img {
+   transform: scale(1.25)
+}
+
+#four_four div {
+   width: 10vw;
+   margin: 0 auto;
+   position: relative;
+   top: 5vh;
+}
+
 .photo-container ul {
   display: flex;
   flex-flow: row wrap;
@@ -91,6 +107,12 @@ input {
 
 .photo-container .not-found {
   width: 100%;
+}
+
+#loading {
+   position: relative;
+   top: 2.5vh;
+   font-size: 1.5rem;
 }
 
 @media only screen and (max-width: 767px)  {
