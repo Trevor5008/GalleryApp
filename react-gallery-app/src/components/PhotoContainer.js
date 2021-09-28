@@ -4,9 +4,10 @@ import NotFound from './NotFound';
 
 class PhotoContainer extends Component {
    render() {
-      const results = this.props.data;
+      const results = this.props.data,
+      hasResults = results.length > 0;
       let photos;
-      if (results.length > 0) {
+      if (hasResults) {
          photos = results.map( (photo, idx) => {
             return <Photo 
                         key={idx.toString()}
@@ -24,7 +25,7 @@ class PhotoContainer extends Component {
 
       return (
          <div className="photo-container">
-            <h2>{title} Gifs</h2>
+            <h2>{hasResults ? title + ' Gifs' : ''}</h2>
             <ul>
                {photos}
             </ul>

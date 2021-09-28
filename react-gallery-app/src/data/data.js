@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { apiKey } from '../config';
+import apiKey from '../config';
 
 const presetCategories = ['cats', 'dogs', 'computers'];
 

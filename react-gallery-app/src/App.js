@@ -8,7 +8,7 @@ import Nav from './components/Nav';
 import PhotoContainer from './components/PhotoContainer';
 import FourZeroFour from './components/FourZeroFour';
 
-import { apiKey } from './config';
+import apiKey from './config';
 
 // Preset data 
 import { cats, dogs, computers } from './data/data';

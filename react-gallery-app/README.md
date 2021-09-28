@@ -6,13 +6,24 @@ Single-page photo gallery display application built using React
 * React-Router (DOM)
 * Axios
 
+# Adding your personal Api key
+
+In order to run the application, you'll want to get a non-commercial api key from [flickr](https://www.flickr.com/services/apps/create/)
+* Once you have your key, you'll want to add it to the config_template.js file as shown below:
+```
+const apiKey = '(enter your key here)';
+export default apiKey;
+```
+* Next, remove the '_template' from 'config_template.js' and save
+* .gitigore is already set up to disregard any changes to this file (so your key remains private)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the 'react-gallery-app' project directory, you can run:
 
 ### `npm start`
 
