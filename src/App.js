@@ -51,7 +51,7 @@ class App extends Component {
 
   render() {
    return (
-      <BrowserRouter>
+      <BrowserRouter basename="/GalleryApp">
        <div className="container">
           <SearchForm onSearch={this.performSearch}/>
           <Nav />
