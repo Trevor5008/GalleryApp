@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Trevor5008/GalleryApp/react-gallery-app/static/css/main.cf17b8b5.chunk.css",
+    "main.js": "/Trevor5008/GalleryApp/react-gallery-app/static/js/main.9271a618.chunk.js",
+    "main.js.map": "/Trevor5008/GalleryApp/react-gallery-app/static/js/main.9271a618.chunk.js.map",
+    "runtime-main.js": "/Trevor5008/GalleryApp/react-gallery-app/static/js/runtime-main.973cb746.js",
+    "runtime-main.js.map": "/Trevor5008/GalleryApp/react-gallery-app/static/js/runtime-main.973cb746.js.map",
+    "static/js/2.a925b38e.chunk.js": "/Trevor5008/GalleryApp/react-gallery-app/static/js/2.a925b38e.chunk.js",
+    "static/js/2.a925b38e.chunk.js.map": "/Trevor5008/GalleryApp/react-gallery-app/static/js/2.a925b38e.chunk.js.map",
+    "static/js/3.e0f8344e.chunk.js": "/Trevor5008/GalleryApp/react-gallery-app/static/js/3.e0f8344e.chunk.js",
+    "static/js/3.e0f8344e.chunk.js.map": "/Trevor5008/GalleryApp/react-gallery-app/static/js/3.e0f8344e.chunk.js.map",
+    "index.html": "/Trevor5008/GalleryApp/react-gallery-app/index.html",
+    "static/css/main.cf17b8b5.chunk.css.map": "/Trevor5008/GalleryApp/react-gallery-app/static/css/main.cf17b8b5.chunk.css.map",
+    "static/js/2.a925b38e.chunk.js.LICENSE.txt": "/Trevor5008/GalleryApp/react-gallery-app/static/js/2.a925b38e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.973cb746.js",
+    "static/js/2.a925b38e.chunk.js",
+    "static/css/main.cf17b8b5.chunk.css",
+    "static/js/main.9271a618.chunk.js"
+  ]
+}
