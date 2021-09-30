@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import { HashRouter, Switch, Route, Redirect } from 'react-router-dom';
 import axios from 'axios';
 
 // App components
@@ -51,7 +51,7 @@ class App extends Component {
 
   render() {
    return (
-      <BrowserRouter basename="/GalleryApp">
+      <HashRouter basename="/GalleryApp">
        <div className="container">
           <SearchForm onSearch={this.performSearch}/>
           <Nav />
@@ -67,7 +67,7 @@ class App extends Component {
                </Switch>
           }
        </div>
-      </BrowserRouter>
+      </HashRouter>
    );
   }
 }
